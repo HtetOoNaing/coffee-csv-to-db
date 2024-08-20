@@ -1,7 +1,7 @@
 const express = require('express');
-const router = express.Router();
+const importRouter = express.Router();
 const { importCSV } = require('../controllers/importController');
 
-router.post('/import', importCSV);
+importRouter.post('/import', importCSV);
 
-module.exports = router;
+module.exports = importRouter;
